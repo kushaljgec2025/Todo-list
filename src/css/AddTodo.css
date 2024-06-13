@@ -1,0 +1,67 @@
+.add-todo-container {
+  margin-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2.5rem;
+  column-gap: 2.5rem;
+  background-color: #fff;
+  padding: 2rem 10rem;
+  border-radius: 50px;
+}
+input {
+  width: 100%;
+  border: none;
+}
+.add-todo-container label {
+  position: relative;
+}
+
+.add-todo-container label .placeholder {
+  color: rgb(2, 2, 43);
+  position: absolute;
+  bottom: 100%;
+}
+
+.add-todo-container label input {
+  padding: 3px 5px;
+  font-size: 1.3rem;
+
+  border-radius: 20px;
+  outline: none;
+  outline-width: 1.5px;
+  caret-color: #616161;
+  color: #585858;
+  padding: 0.5rem 1rem;
+  background-color: rgb(241, 241, 241);
+}
+.add-todo-container label input:focus {
+}
+
+.add-todo-container .add-btn {
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  color: #2ee59d;
+  background-color: transparent;
+  border: 1px solid #2ee59d;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 10rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.add-btn:hover {
+  color: #fff;
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+}
+
+.add-todo-container .error {
+  color: red;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
